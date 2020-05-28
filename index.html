@@ -5,6 +5,19 @@
   <meta charset="UTF-8"/>
 </head>
 <body> 
+    <style>
+        body {
+            background-color: black;
+        }
+        button {
+            background-color: white;
+            color: black;
+            border: black;
+            width: 100%;
+            height: 100px;
+            top: 50%;
+        }
+    </style>
 <button onclick="refreshPage()">Retry?</button>
   <script>
 alert('Ready?')
@@ -14,17 +27,15 @@ alert('Scissors...')
 
 let result = Math.random()
 
-if (result <= .3333333333) {
+if (result <= .3333333333333333) {
         alert('Shoot: Rock!')
-    } else if (result >= .6666666666) {
+    } else if (result >= .6666666666666666) {
         alert('Shoot: Scissors!')        
     } else {
         alert('Shoot: Paper!')
     }
     function refreshPage(){
-		if(confirm("Are you sure, want to refresh?")){
-			location.reload();
-		}				
+			location.reload();				
 	}
   </script>
 </body>
