@@ -5,6 +5,7 @@
   <meta charset="UTF-8"/>
 </head>
 <body> 
+<button onclick="refreshPage()">Retry?</button>
   <script>
 alert('Ready?')
 alert('Rock...')
@@ -20,6 +21,11 @@ if (result <= .3333333333) {
     } else {
         alert('Shoot: Paper!')
     }
+    function refreshPage(){
+		if(confirm("Are you sure, want to refresh?")){
+			location.reload();
+		}				
+	}
   </script>
 </body>
 </html>
